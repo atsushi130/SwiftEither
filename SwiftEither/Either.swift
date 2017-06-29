@@ -45,6 +45,6 @@ enum Either<Left: Throwable, Right> {
     }
     
     func fold<U>(f: (Either<Left, Right>) -> U) -> U {
-            return f(self)
+        return f(self)
     }
 }
